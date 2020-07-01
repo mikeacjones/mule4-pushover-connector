@@ -7,7 +7,7 @@
     <packaging>mule-extension</packaging>
     <groupId>net.mikej.connectors</groupId>
     <artifactId>pushover-connector</artifactId>
-    <version>0.0.4-SNAPSHOT</version>
+    <version>0.0.6-SNAPSHOT</version>
 
     <properties>
         <maven.site.plugin.version>3.9.0</maven.site.plugin.version>

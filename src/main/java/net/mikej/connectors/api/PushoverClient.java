@@ -39,7 +39,7 @@ public class PushoverClient {
         Call<MessageResult> messageCall = service.sendMessage(token, userToken, message, deviceCsv, title, url, urlTitle, priority == null ? null : priority.getValue(), timestamp);
         Response<MessageResult> messageResponse = messageCall.execute();
         if (messageResponse.isSuccessful()) return messageResponse.body();
-        else throw new IOException("Failed to send message");
+        else throw new IOException("Failed to send message: " + messageResponse.errorBody().string());
     }
 
 }

@@ -30,4 +30,4 @@ testdir/
 hostkey.ser
 *.h2.db
 *.factorypath
-Credentials.java
+LocalTestCredentials.java
