@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <servers>
+    <server>
+      <id>github-pushover</id>
+      <username>${env.GIT_USERNAME}</username>
+      <password>${env.GIT_TOKEN}</password>
+    </server>
+  </servers>
+  <repositories>
+      <repository>
+          <id>github-pushover</id>
+          <name>GitHub Maven Packages</name>
+          <url>https://maven.pkg.github.com/mikeacjones/mule4-pushover-connector</url>
+          <releases><enabled>true</enabled></releases>
+          <snapshots><enabled>true</enabled></snapshots>
+      </repository>
+  </repositories>
+</settings>

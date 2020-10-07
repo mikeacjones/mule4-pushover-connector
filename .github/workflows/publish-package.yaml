@@ -27,13 +27,10 @@ jobs:
       run: cd main && mvn clean package --no-transfer-progress
 
     - name: Deploy artifact
-      run: cd main && mvn deploy:deploy-file@github-deploy --no-transfer-progress
+      run: cd main && mvn deploy:deploy-file@github-deploy --no-transfer-progress -s main/.github/workflows/settings.xml
       env:
-        NEXUS_USERNAME: ${{ secrets.NEXUS_USERNAME }}
-        NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
-        VERSION: ${{ matrix.version }}
-        GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
-        GIT_USERNAME: ${{ secrets.GIT_USERNAME }}
+        GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GIT_USERNAME: mikeacjones
 
     - name: Upload artifact
       uses: actions/upload-artifact@v2
