@@ -27,7 +27,7 @@ jobs:
       run: cd main && mvn clean package --no-transfer-progress
 
     - name: Deploy artifact
-      run: cd main && mvn deploy:deploy-file@github-deploy --no-transfer-progress -s main/.github/workflows/settings.xml
+      run: cd main && mvn deploy:deploy-file@github-deploy --no-transfer-progress -s .github/workflows/settings.xml
       env:
         GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GIT_USERNAME: mikeacjones
