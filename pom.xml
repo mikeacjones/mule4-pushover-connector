@@ -8,7 +8,7 @@
   <packaging>mule-extension</packaging>
   <groupId>af871948-2dd2-4f4c-8bbd-f6a997cd48d7</groupId>
   <artifactId>pushover-connector</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
 
   <properties>
     <maven.site.plugin.version>3.9.0</maven.site.plugin.version>
