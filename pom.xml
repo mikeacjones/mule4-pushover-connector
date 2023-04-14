@@ -17,7 +17,7 @@
     <jackson.annotations.version>2.11.0</jackson.annotations.version>
     <jackson.databind.version>2.11.0</jackson.databind.version>
     <joda.version>2.10.6</joda.version>
-    <org.json.version>20200518</org.json.version>
+    <org.json.version>20230227</org.json.version>
     <retrofit.version>2.9.0</retrofit.version>
     <jackson.converter.version>2.9.0</jackson.converter.version>
   </properties>
